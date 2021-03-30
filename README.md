@@ -13,9 +13,9 @@
 可以实现软件内浏览塞壬唱片官网并正常欣赏音乐  
 F11键退出/进入全屏模式，Q键退出软件或恢复窗口大小  
 右键显示菜单，菜单功能：  
-[关闭]:https://github.com/royenheart/Monster-siren.Arknights.webdirectopen/main/img/close.ico  
-[全屏]:https://github.com/royenheart/Monster-siren.Arknights.webdirectopen/main/img/fullsc.ico  
-[重载]:https://github.com/royenheart/Monster-siren.Arknights.webdirectopen/main/img/reload.ico  
+[关闭]:https://github.com/royenheart/Monster-siren.Arknights.webdirectopen/blob/main/img/close.ico
+[全屏]:https://github.com/royenheart/Monster-siren.Arknights.webdirectopen/blob/main/img/fullsc.ico  
+[重载]:https://github.com/royenheart/Monster-siren.Arknights.webdirectopen/blob/main/img/reload.ico  
 * ![关闭]：退出软件
 * ![全屏]：切换全屏模式
 * ![重载]：重新载入塞壬唱片官网
