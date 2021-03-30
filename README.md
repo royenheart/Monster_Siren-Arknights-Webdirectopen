@@ -12,12 +12,18 @@
 # FUNCTIONS
 可以实现软件内浏览塞壬唱片官网并正常欣赏音乐  
 F11键退出/进入全屏模式，Q键退出软件或恢复窗口大小  
-右键显示菜单，菜单包括全屏和退出功能  
+右键显示菜单，菜单功能：  
+[关闭]:https://github.com/royenheart/Monster-siren.Arknights.webdirectopen/main/img/close.ico  
+[全屏]:https://github.com/royenheart/Monster-siren.Arknights.webdirectopen/main/img/fullsc.ico  
+[重载]:https://github.com/royenheart/Monster-siren.Arknights.webdirectopen/main/img/reload.ico  
+* ![关闭]：退出软件
+* ![全屏]：切换全屏模式
+* ![重载]：重新载入塞壬唱片官网
 
 # DRAWBACKS
 软件加载网页稍微有点迟钝  
 右键加载菜单会使网页加载停止（音乐播放不影响）  
-点击链接会闪退  
+点击链接会闪退【已修复】  
 
 # ABOUT THE SOFTWARE
 软件仅实现将塞壬唱片网站以类似播放器形式打开  
