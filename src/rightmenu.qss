@@ -1,0 +1,18 @@
+QMenu {
+    background: #202020;
+    border: none;
+}
+QMenu::icon {
+    padding: 5px 5px;
+}
+QMenu::item {
+    padding: 5px 10px;
+    font: normal bold 15px;
+    color: #FFFFFF;
+}
+QMenu::item:hover {
+    background-color: #808080;
+}
+QMenu::item:selected {
+    background-color: #909090;
+}
