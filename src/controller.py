@@ -52,10 +52,15 @@ class WebView(QWebEngineView):
         self.actionC = QAction(QIcon('img/reload.ico'),'RELOAD')
         self.actionC.setObjectName("func3")
         self.actionC.triggered.connect(self.funcC)
+        # 更多音乐（游戏内未被正式上传文件）
+        self.actionD = QAction(QIcon('img/more.ico'), 'MORE')
+        self.actionD.setObjectName("func4")
+        self.actionD.triggered.connect(self.funcD)
         # 添加选项
         rightmenu.addAction(self.actionA)
         rightmenu.addAction(self.actionB)
         rightmenu.addAction(self.actionC)
+        rightmenu.addAction(self.actionD)
         # 菜单栏显示于鼠标处
         rightmenu.exec_(QCursor.pos())
 
@@ -69,3 +74,7 @@ class WebView(QWebEngineView):
     # 重载窗口函数
     def funcC(self):
         self.father.open_web(self.father.browser,QUrl('https://monster-siren.hypergryph.com/'))
+
+    # 更多音乐
+    def funcD(self):
+        self.father.open_web(self.father.browser, QUrl('http://akmsc.royenheart.com'))
