@@ -19,6 +19,7 @@
 * FULLSCREEN ：切换全屏模式  
 * RELOAD     ：重载窗口（默认进入塞壬唱片官网）  
 * MORE       : 试听明日方舟游戏内未正式上传音乐（跳转到个人搭建的网站）  
+* BACK       : 退回至之前打开的网站（未打开其他网站则效果与重载一样）  
 
 # DRAWBACKS
 软件加载网页稍微有点迟钝  
@@ -33,7 +34,6 @@
 # ABOUT THE SOFTWARE
 软件仅实现将塞壬唱片网站以类似播放器形式打开  
 还有很多不完善的地方希望能予以矫正  
-希望像个真正的播放器一样欣赏音乐：）  
 
 # THANKS
 THANKS FOR THE UNFORGETTABLE MEMORY ARKNIGHTS BRING TO ME  
