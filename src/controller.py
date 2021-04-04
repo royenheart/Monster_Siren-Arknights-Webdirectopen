@@ -26,9 +26,11 @@ class WebView(QWebEngineView):
 
     # 重写creatwindow
     def createWindow(self, webWindowType):
+        # 添加历史记录
+        self.father.hisWeb.append(self.father.browser.url())
         # 创建新WebView对象
         new_webview = WebView(self.father)
-        self.father.open_web(new_webview,QUrl('https://monster-siren.hypergryph.com/'))
+        self.father.open_web(new_webview,QUrl(new_webview.url()))
         # 返回新的窗口
         return self.father.browser
 
@@ -56,11 +58,16 @@ class WebView(QWebEngineView):
         self.actionD = QAction(QIcon('img/more.ico'), 'MORE')
         self.actionD.setObjectName("func4")
         self.actionD.triggered.connect(self.funcD)
+        # 返回选项（上一个网页）
+        self.actionE = QAction(QIcon('img/back.ico'),'BACK')
+        self.actionE.setObjectName("func5")
+        self.actionE.triggered.connect(self.funcE)
         # 添加选项
         rightmenu.addAction(self.actionA)
         rightmenu.addAction(self.actionB)
         rightmenu.addAction(self.actionC)
         rightmenu.addAction(self.actionD)
+        rightmenu.addAction(self.actionE)
         # 菜单栏显示于鼠标处
         rightmenu.exec_(QCursor.pos())
 
@@ -77,4 +84,14 @@ class WebView(QWebEngineView):
 
     # 更多音乐
     def funcD(self):
+        self.father.hisWeb.append(self.father.browser.url())
         self.father.open_web(self.father.browser, QUrl('http://akmsc.royenheart.com'))
+
+    # 返回上一个打开的窗口
+    def funcE(self):
+        if len(self.father.hisWeb) >= 1:
+            self.father.open_web(self.father.browser, self.father.hisWeb.pop())
+        else:
+            self.father.open_web(self.father.browser, QUrl('https://monster-siren.hypergryph.com/'))
+
+
