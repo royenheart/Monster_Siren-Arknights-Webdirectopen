@@ -23,6 +23,8 @@ class MainDemo(QMainWindow):
         self.show()
         # 调用函数打开网页
         self.open_web(WebView(self),QUrl('https://monster-siren.hypergryph.com/'))
+        # 历史列表
+        self.hisWeb = []
 
     # 按键对应操作
     def keyPressEvent(self, event):
